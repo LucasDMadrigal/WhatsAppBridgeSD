@@ -1,0 +1,79 @@
+# Compilados de Visual Studio / SnapDevelop
+bin/
+obj/
+out/
+debug/
+release/
+*.exe
+*.dll
+*.pdb
+
+# Archivos de usuario de Visual Studio / SnapDevelop
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Configuración temporal
+.vs/
+.idea/
+*.ncrunchsolution
+*.ncrunchproject
+
+# Archivos de dependencias
+packages/
+*.nuget/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Logs
+*.log
+logs/
+LogFiles/
+
+# Configuración de sistema operativo
+Thumbs.db
+ehthumbs.db
+.DS_Store
+desktop.ini
+
+# Archivos de cache
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.swn
+
+# Archivos de Entity Framework
+Migrations/
+*.mdf
+*.ldf
+
+# Secretos y configuraciones locales
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Archivos de testing y coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Node.js (si usás alguna integración con frontend Angular/React en SnapDevelop)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker
+docker-compose.override.yml
+.docker/
+
+# Otros
+*.db
+*.sqlite
