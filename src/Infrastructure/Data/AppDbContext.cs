@@ -18,5 +18,6 @@ namespace WhatsAppBridgeSD.src.Infrastructure.Data
                 .HasIndex(m => m.WhatsAppMessageId)
                 .IsUnique(false); // si WhatsAppId es único, poner true
             base.OnModelCreating(modelBuilder);
+        }
     }
 }

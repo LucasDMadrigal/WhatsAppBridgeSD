@@ -30,7 +30,7 @@ namespace WhatsAppBridgeSD.src.Infrastructure.Services
             await _db.SaveChangesAsync();
         }
 
-        public Task MarkAsReadBulkAsync(IEnumerable<long> ids)
+        public async Task MarkAsReadBulkAsync(IEnumerable<long> ids)
         {
             var list = await _db.Messages.Where(m => ids.Contains(m.Id)).ToListAsync();
             foreach (var m in list) m.Status = "acknowledged";

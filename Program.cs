@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using WhatsAppBridgeSD.src.Core.Interfaces;
 using WhatsAppBridgeSD.src.Infrastructure.Data;
 using WhatsAppBridgeSD.src.Infrastructure.Services;
+using WhatsAppBridgeSD.src.SignalR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,5 +42,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.MapHub<ChatHub>("/chatHub"); // si usás SignalR
+
+Console.WriteLine("eeeeeeooooo");
 
 app.Run();
